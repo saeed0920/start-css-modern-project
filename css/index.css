@@ -18,6 +18,9 @@ body {
 .font-lg {
   font-size: xx-large;
 }
+.font-llg {
+  font-size: 250px;
+}
 .flex {
   display: flex;
   justify-content: center;
@@ -27,12 +30,26 @@ body {
 .background-telegram {
   background: linear-gradient(to left, #1c92d2, #5b86e5);
 }
+.bot {
+  border-radius: 40%;
+  color: #fff;
+  background-color: aqua;
+  padding: 8px;
+}
+.image {
+  background-size: cover;
+  background-position: top;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
 /* navbar  */
 .navbar .flex {
   justify-content: space-between;
 }
 .navbar-sec {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .ul-primery {
@@ -47,10 +64,29 @@ body {
   line-height: 1.2;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-a:hover {
+.ul__a:hover {
   border-bottom: 1px #fff solid;
+}
+/* content */
+.content {
+  background-image: linear-gradient(to right, #ee9ca7ca, #ffdde1ef),
+    url(../image/bech.jpg);
+  box-sizing: border-box;
+  height: 550px;
+  width: auto;
+  display: block;
+  text-align: center;
+  clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0);
+}
+.content__h1 {
+  text-transform: uppercase;
+  color: #e7e5e5;
+  letter-spacing: 19px;
+}
+.content__bot {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 20px;
 }
