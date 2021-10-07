@@ -1,0 +1,56 @@
+/* starcss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+/* uniti css */
+.font-sml {
+  font-size: smaller;
+}
+.font-nl {
+  font: medium;
+}
+.font-lg {
+  font-size: xx-large;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.background-telegram {
+  background: linear-gradient(to left, #1c92d2, #5b86e5);
+}
+/* navbar  */
+.navbar .flex {
+  justify-content: space-between;
+}
+.navbar-sec {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.ul-primery {
+  display: flex;
+}
+.ul.nav {
+  margin: 0 10px;
+}
+.cum {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  border-bottom: 1px #fff solid;
+}
