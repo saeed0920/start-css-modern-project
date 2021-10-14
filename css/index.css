@@ -85,7 +85,7 @@ a {
 }
 .content__bot,
 .content__bot:link,
-.content__bot:visited {
+.content__bot:visited .bot--style {
   margin-top: 20px;
   border-radius: 9rem;
   width: 175px;
@@ -95,11 +95,13 @@ a {
   transition: all 0.2s;
   box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.1);
 }
-.content__bot:hover {
+.content__bot,
+.bot--style:hover {
   transform: translateY(-5px);
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
 }
-.content__bot:active {
+.content__bot,
+.bot--style:active {
   transform: translateY(-2px);
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
