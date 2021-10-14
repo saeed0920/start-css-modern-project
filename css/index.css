@@ -83,10 +83,23 @@ a {
   color: #e7e5e5;
   letter-spacing: 19px;
 }
-.content__bot {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
-  top: 50%;
+.content__bot,
+.content__bot:link,
+.content__bot:visited {
   margin-top: 20px;
+  border-radius: 9rem;
+  width: 175px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.1);
+}
+.content__bot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+}
+.content__bot:active {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
