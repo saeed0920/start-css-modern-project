@@ -19,7 +19,7 @@ body {
   font-size: xx-large;
 }
 .font-llg {
-  font-size: 250px;
+  font-size: 180px;
 }
 .flex {
   display: flex;
@@ -28,7 +28,7 @@ body {
   height: 100%;
 }
 .background-telegram {
-  background: linear-gradient(to left, #1c92d2, #5b86e5);
+  background: #00dcdc;
 }
 .bot {
   border-radius: 40%;
@@ -82,6 +82,7 @@ a {
   text-transform: uppercase;
   color: #e7e5e5;
   letter-spacing: 19px;
+  padding-top: 50px;
 }
 .content__bot,
 .content__bot:link,
