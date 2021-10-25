@@ -83,10 +83,10 @@ a {
   color: #e7e5e5;
   letter-spacing: 19px;
   padding-top: 50px;
-  animation: anicontent 2s;
+  animation: ani--content 2s;
 }
 .content__bot {
-  animation: anibot ease-in 1.7s;
+  animation: ani--bot ease-in 1.7s;
   animation-fill-mode: backwards;
 }
 .content__bot,
@@ -113,7 +113,7 @@ a {
 }
 /* animation */
 
-@keyframes anicontent {
+@keyframes ani--content {
   0% {
     opacity: 0;
     transform: translateX(-100px);
@@ -125,7 +125,7 @@ a {
   }
 }
 
-@keyframes anibot {
+@keyframes ani--bot {
   0% {
     opacity: 0;
     transform: translateY(40px);
