@@ -51,6 +51,9 @@ a {
   max-width: 1300px;
   margin: 0 auto; }
 
+.ul__a:hover {
+  border-bottom: 1px #fff solid; }
+
 .ul-primery {
   display: flex; }
 
@@ -62,9 +65,6 @@ a {
   font-weight: 300;
   line-height: 1.2; }
 
-.ul__a:hover {
-  border-bottom: 1px #fff solid; }
-
 /* content */
 .content {
   background-image: linear-gradient(to right, #ee9ca7ca, #ffdde1ef), url(../image/bech.jpg);
@@ -74,39 +74,33 @@ a {
   display: block;
   text-align: center;
   clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0); }
-
-.content__h1 {
-  text-transform: uppercase;
-  color: #e7e5e5;
-  letter-spacing: 19px;
-  padding-top: 50px;
-  animation: anicontent 2s; }
-
-.content__bot {
-  animation: anibot ease-in 1.7s;
-  animation-fill-mode: backwards; }
-
-.content__bot,
-.content__bot:link,
-.content__bot:visited .bot--style {
-  margin-top: 20px;
-  border-radius: 9rem;
-  width: 175px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s;
-  box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.1); }
-
-.content__bot,
-.bot--style:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2); }
-
-.content__bot,
-.bot--style:active {
-  transform: translateY(-2px);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); }
+  .content__h1 {
+    text-transform: uppercase;
+    color: #e7e5e5;
+    letter-spacing: 19px;
+    padding-top: 50px;
+    animation: anicontent 2s; }
+  .content__bot {
+    animation: anibot ease-in 1.7s;
+    animation-fill-mode: backwards; }
+  .content__bot, .content__bot:link,
+  .content__bot:visited .bot--style {
+    margin-top: 20px;
+    border-radius: 9rem;
+    width: 175px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.1); }
+  .content__bot,
+  .content .bot--style:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2); }
+  .content__bot,
+  .content .bot--style:active {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); }
 
 /* animation */
 @keyframes anicontent {
