@@ -1,0 +1,11 @@
+/* navbar  */
+.navbar {
+  & .flex {
+    justify-content: space-between;
+  }
+  &-sec {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 0.08rem;
+  }
+}

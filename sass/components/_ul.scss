@@ -1,0 +1,11 @@
+.ul {
+  &__a:hover {
+    border-bottom: 1px #fff solid;
+  }
+  &-primery {
+    display: flex;
+  }
+  &.nav {
+    margin: 0 10px;
+  }
+}
