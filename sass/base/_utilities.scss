@@ -29,3 +29,15 @@ a {
   text-decoration: none;
   color: $color-white;
 }
+.u-center-text {
+  text-align: center;
+}
+.u-margin-bot-big {
+  margin-bottom: 5rem;
+}
+.u-margin-bot-med {
+  margin-bottom: 2rem;
+}
+.u-margin-bot-small {
+  margin-bottom: $default-font-size;
+}

@@ -4,3 +4,26 @@
   background-color: aqua;
   padding: 8px;
 }
+.btn--main {
+  transition: all 0.4s;
+  border-radius: 0.13rem;
+  &:visited,
+  &:link {
+    font-size: $default-font-size;
+    color: $color-pink-light;
+    display: inline-block;
+    border-bottom: 1px solid $color-pink-white;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background-color: $color-pink-light;
+    color: $color-white;
+    box-shadow: 0 0.2rem 0.5rem rgba($color-black, 0.5);
+    transform: translateY(-3px);
+  }
+  &:active {
+    box-shadow: 0 0.2rem 0.3rem rgba($color-black, 0.5);
+    transform: translateY(-1px);
+  }
+}

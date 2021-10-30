@@ -1,0 +1,12 @@
+.row {
+  max-width: 58rem;
+  margin: 0 auto;
+  @include clearfix;
+  .row__2-of-1 {
+    width: calc((100% - #{$space-row}) / 2);
+    float: left;
+    &:not(:last-child) {
+      margin-right: $space-row;
+    }
+  }
+}

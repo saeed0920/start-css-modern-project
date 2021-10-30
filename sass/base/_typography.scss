@@ -3,7 +3,7 @@
   background-image: linear-gradient(to right, #ee9ca7ca, #ffdde1ef),
     url(../image/bech.jpg);
   box-sizing: border-box;
-  height: 490px;
+  height: 88vh;
   width: auto;
   display: block;
   text-align: center;
@@ -46,4 +46,30 @@
   color: $color-white;
   font-weight: 300;
   line-height: 1.2;
+}
+.header-sec {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to left,
+    $color-pink-light,
+    $color-pink-white
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: skewx(16deg) skewY(-3deg) scale(1.1);
+    box-shadow: 0.2rem 0.8rem 0.4rem rgba(0, 0, 0, 0.2);
+  }
+}
+.section__text {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paraghraph {
+  font-size: $default-font-size;
+  margin-bottom: 2rem;
 }

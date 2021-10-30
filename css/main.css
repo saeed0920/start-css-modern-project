@@ -19,7 +19,7 @@
 .content {
   background-image: linear-gradient(to right, #ee9ca7ca, #ffdde1ef), url(../image/bech.jpg);
   box-sizing: border-box;
-  height: 490px;
+  height: 88vh;
   width: auto;
   display: block;
   text-align: center;
@@ -57,14 +57,37 @@
   font-weight: 300;
   line-height: 1.2; }
 
+.header-sec {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to left, #fd5b68, #f18b79);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-out; }
+  .header-sec:hover {
+    transform: skewx(16deg) skewY(-3deg) scale(1.1);
+    box-shadow: 0.2rem 0.8rem 0.4rem rgba(0, 0, 0, 0.2); }
+
+.section__text {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paraghraph {
+  font-size: 1rem;
+  margin-bottom: 2rem; }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  margin: 2rem; }
+
 body {
-  font-family: cursive;
-  margin: 1rem; }
+  font-family: cursive; }
 
 /* uniti css */
 .font-sml {
@@ -96,6 +119,18 @@ a {
   text-decoration: none;
   color: #fff; }
 
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bot-big {
+  margin-bottom: 5rem; }
+
+.u-margin-bot-med {
+  margin-bottom: 2rem; }
+
+.u-margin-bot-small {
+  margin-bottom: 1rem; }
+
 .ul__a:hover {
   border-bottom: 1px #fff solid; }
 
@@ -111,6 +146,25 @@ a {
   background-color: aqua;
   padding: 8px; }
 
+.btn--main {
+  transition: all 0.4s;
+  border-radius: 0.13rem; }
+  .btn--main:visited, .btn--main:link {
+    font-size: 1rem;
+    color: #fd5b68;
+    display: inline-block;
+    border-bottom: 1px solid #f18b79;
+    padding: 3px;
+    transition: all 0.2s; }
+  .btn--main:hover {
+    background-color: #fd5b68;
+    color: #fff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px); }
+  .btn--main:active {
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px); }
+
 /* navbar  */
 .navbar .flex {
   justify-content: space-between; }
@@ -119,3 +173,21 @@ a {
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 0.08rem; }
+
+.row {
+  max-width: 58rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .row__2-of-1 {
+    width: calc((100% - 0.5rem) / 2);
+    float: left; }
+    .row .row__2-of-1:not(:last-child) {
+      margin-right: 0.5rem; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 10rem 0;
+  margin-top: -20vh; }
