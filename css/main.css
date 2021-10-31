@@ -187,6 +187,34 @@ a {
     .row .row__2-of-1:not(:last-child) {
       margin-right: 0.5rem; }
 
+.content-img {
+  position: relative; }
+  .content-img__photo {
+    width: 75%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 0.6rem; }
+    .content-img__photo__1 {
+      left: 2rem;
+      bottom: -20rem; }
+    .content-img__photo__2 {
+      right: -8rem;
+      bottom: -13rem; }
+    .content-img__photo__3 {
+      top: -2rem;
+      left: -1rem; }
+    .content-img__photo:hover {
+      outline: 0.5rem rgba(253, 91, 104, 0.7) solid;
+      transform: scale(1.19) translateY(-0.5px);
+      box-shadow: 0 1.6rem 1rem rgba(0, 0, 0, 0.5);
+      z-index: 15;
+      outline-style: inset; }
+  .content-img:hover .content-img__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 10rem 0;

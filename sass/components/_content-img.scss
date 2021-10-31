@@ -1,0 +1,40 @@
+.content-img {
+  position: relative;
+
+  &__photo {
+    width: 75%;
+    box-shadow: 0 1rem 1rem rgba($color_black, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 0.6rem;
+    // outline: invert;
+    &__1 {
+      left: 2rem;
+      bottom: -20rem;
+    }
+    &__2 {
+      right: -8rem;
+      bottom: -13rem;
+    }
+    &__3 {
+      top: -2rem;
+      left: -1rem;
+    }
+    &:hover {
+      // position: relative;
+      //   box-sizing: border-box;
+      // width: 90%;
+      //   padding: 0;
+      outline: 0.5rem rgba($color-pink-light, 0.7) solid;
+      transform: scale(1.19) translateY(-0.5px);
+      box-shadow: 0 1.6rem 1rem rgba($color_black, 0.5);
+      z-index: 15;
+      outline-style: inset;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
