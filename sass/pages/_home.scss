@@ -3,3 +3,14 @@
   padding: 10rem 0;
   margin-top: -20vh;
 }
+.section-featuers {
+  padding: 10rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-img-pink-light, 0.8),
+      rgba($color-img-pink-white, 0.8)
+    ),
+    url(../../image/section-features.jpg);
+
+  background-size: cover;
+}

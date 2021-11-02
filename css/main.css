@@ -17,7 +17,7 @@
 
 /* content */
 .content {
-  background-image: linear-gradient(to right, #ee9ca7ca, #ffdde1ef), url(../image/bech.jpg);
+  background-image: linear-gradient(to right, rgba(214, 109, 117, 0.8), rgba(226, 149, 135, 0.8)), url(../image/bech.jpg);
   box-sizing: border-box;
   height: 88vh;
   width: auto;
@@ -61,7 +61,7 @@
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
-  background-image: linear-gradient(to left, #fd5b68, #f18b79);
+  background: linear-gradient(to left, #fd5b68, #f18b79);
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.2s ease-out; }
@@ -130,6 +130,9 @@ a {
 
 .u-margin-bot-small {
   margin-bottom: 1rem; }
+
+.text-uppercase {
+  text-transform: uppercase; }
 
 .ul__a:hover {
   border-bottom: 1px #fff solid; }
@@ -215,7 +218,43 @@ a {
   .content-img:hover .content-img__photo:not(:hover) {
     transform: scale(0.95); }
 
+.section-featuers__row-2 {
+  margin: 0 auto;
+  max-width: 1114px; }
+  .section-featuers__row-2::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .section-featuers__row-2__1-of-4 {
+    float: left;
+    width: calc((100% - 3 * 4rem) / 4); }
+    .section-featuers__row-2__1-of-4:not(:last-child) {
+      margin-right: 4rem; }
+    .section-featuers__row-2__1-of-4__box {
+      transition: transform 0.2s;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 3px;
+      box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      padding: 2.1rem;
+      background-color: rgba(255, 255, 255, 0.4); }
+      .section-featuers__row-2__1-of-4__box__icon {
+        display: inline-block;
+        margin-bottom: 0.3rem;
+        font-size: 3.8rem;
+        background-image: linear-gradient(to right, #f18b79, #fd5b68);
+        -webkit-background-clip: text;
+        color: transparent; }
+      .section-featuers__row-2__1-of-4__box:hover {
+        transform: translateY(-1.1rem) scale(1.03);
+        box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.26); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 10rem 0;
   margin-top: -20vh; }
+
+.section-featuers {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right, rgba(214, 109, 117, 0.8), rgba(226, 149, 135, 0.8)), url(../../image/section-features.jpg);
+  background-size: cover; }

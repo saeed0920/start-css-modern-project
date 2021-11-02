@@ -1,0 +1,41 @@
+.section-featuers {
+  &__row-2 {
+    margin: 0 auto;
+    max-width: 1114px;
+    @include clearfix;
+    &__1-of-4 {
+      float: left;
+      width: calc((100% - 3 * 4rem) / 4);
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+      &__box {
+        transition: transform 0.2s;
+        text-align: center;
+        // display: inline-block;
+        font-size: 1rem;
+        border-radius: 3px;
+        box-shadow: 0rem 1.5rem 4rem rgba($color-black, 0.15);
+        padding: 2.1rem;
+        background-color: rgba($color-white, 0.4);
+        &__icon {
+          display: inline-block;
+          margin-bottom: 0.3rem;
+          font-size: 3.8rem;
+          background-image: linear-gradient(
+            to right,
+            $color-pink-white,
+            $color-pink-light
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+        &:hover {
+          transform: translateY(-1.1rem) scale(1.03);
+          box-shadow: 0rem 1rem 4rem rgba($color-black, 0.26);
+        }
+      }
+    }
+  }
+}
