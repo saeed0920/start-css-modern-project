@@ -134,6 +134,15 @@ a {
 .text-uppercase {
   text-transform: uppercase; }
 
+.u-margin-top-small {
+  margin-top: 1rem; }
+
+.u-margin-top-med {
+  margin-top: 3rem; }
+
+.u-margin-top-big {
+  margin-top: 5rem; }
+
 .ul__a:hover {
   border-bottom: 1px #fff solid; }
 
@@ -194,6 +203,53 @@ a {
     box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
     transform: translateY(-1px); }
 
+.box--down__btn {
+  transition: all 0.2s;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 2.1rem;
+  border-bottom: 3px;
+  background: linear-gradient(to right, #fd5b68, #f18b79); }
+  .box--down__btn__icon {
+    display: none; }
+  .box--down__btn:hover {
+    box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6));
+    color: black;
+    color: black;
+    transform: translateY(-1rem); }
+  .box--down__btn:active .box--down__btn__icon {
+    display: inline-block;
+    font-size: 1rem; }
+  .box--down__btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3); }
+
+.box--text__btn {
+  transition: all 0.2s;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 2.1rem;
+  border-bottom: 3px;
+  background: linear-gradient(to right, #fd5b68, #f18b79); }
+  .box--text__btn:hover {
+    box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+    color: black;
+    color: black;
+    transform: translateY(-1rem); }
+
 /* navbar  */
 .navbar .flex {
   justify-content: space-between; }
@@ -220,6 +276,9 @@ a {
     float: left; }
     .row__1-of-3:not(:last-child) {
       margin-right: 3rem; }
+  .row__2-of-3-3 {
+    width: calc(2 * ((100% - (3 * 3rem)) / 3) + 3rem);
+    float: left; }
 
 .content-img {
   position: relative; }
