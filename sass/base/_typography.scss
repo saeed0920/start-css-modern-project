@@ -33,7 +33,7 @@
     text-decoration: none;
     display: inline-block;
     transition: all 0.2s;
-    box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 90px $box-shodow-015;
   }
   &__bot,
   .bot--style:hover {

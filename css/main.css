@@ -42,7 +42,7 @@
     text-decoration: none;
     display: inline-block;
     transition: all 0.2s;
-    box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.1); }
+    box-shadow: 1px 1px 90px rgba(0, 0, 0, 0.15); }
   .content__bot,
   .content .bot--style:hover {
     transform: translateY(-5px);
@@ -143,6 +143,32 @@ a {
 .ul.nav {
   margin: 0 10px; }
 
+.card {
+  perspective: 50rem;
+  -moz-perspective: 50rem;
+  position: relative;
+  height: 30rem; }
+  .card__side {
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.15);
+    height: 35rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background: linear-gradient(to right bottom, #f7d794, #f5cd79); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .bot {
   border-radius: 40%;
   color: #fff;
@@ -189,6 +215,11 @@ a {
     float: left; }
     .row .row__2-of-1:not(:last-child) {
       margin-right: 0.5rem; }
+  .row__1-of-3 {
+    width: calc((100% - (3 * 3rem)) / 3);
+    float: left; }
+    .row__1-of-3:not(:last-child) {
+      margin-right: 3rem; }
 
 .content-img {
   position: relative; }
@@ -247,14 +278,23 @@ a {
         color: transparent; }
       .section-featuers__row-2__1-of-4__box:hover {
         transform: translateY(-1.1rem) scale(1.03);
-        box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.26); }
+        box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.25); }
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 10rem 0;
+  padding: 20rem 0;
   margin-top: -20vh; }
 
 .section-featuers {
   padding: 10rem 0;
   background-image: linear-gradient(to right, rgba(214, 109, 117, 0.8), rgba(226, 149, 135, 0.8)), url(../../image/section-features.jpg);
-  background-size: cover; }
+  background-size: cover;
+  margin-top: -5rem;
+  transform: skewY(-5deg); }
+  .section-featuers > * {
+    transform: skewY(5deg); }
+
+.section--brazil {
+  background-color: #f7f7f7;
+  padding: 17rem 0 30rem 0;
+  margin-top: -5rem; }

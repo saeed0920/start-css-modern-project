@@ -9,7 +9,14 @@
       margin-right: $space-row;
     }
   }
+  &__1-of-3 {
+    width: calc((100% - (3 * 3rem)) / 3);
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
 }
 
 // row __section-featuers  __1-of-4
-

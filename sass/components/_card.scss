@@ -1,0 +1,36 @@
+.card {
+  perspective: 50rem;
+  -moz-perspective: 50rem;
+  position: relative;
+  height: 30rem;
+  &__side {
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: $box-shadow-rem-014 $box-shodow-015;
+    height: 35rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &--front {
+      background-color: $color-white;
+    }
+    &--back {
+      transform: rotateY(180deg);
+      &-1 {
+        background: linear-gradient(
+          to right bottom,
+          $color-yellow-white,
+          $color-yellow-light
+        );
+      }
+    }
+  }
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}
