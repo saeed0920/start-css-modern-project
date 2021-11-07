@@ -22,6 +22,9 @@
     width: calc(2 * ((100% - (3 * 3rem)) / 3) + 3rem);
     float: left;
   }
+  &--card--with {
+    max-width: 80rem;
+  }
 }
 
 // row __section-featuers  __1-of-4

@@ -23,6 +23,7 @@
   width: auto;
   display: block;
   text-align: center;
+  -webkit-clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0);
   clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0); }
   .content__h1 {
     text-transform: uppercase;
@@ -156,12 +157,13 @@ a {
   perspective: 50rem;
   -moz-perspective: 50rem;
   position: relative;
-  height: 30rem; }
+  height: 37rem; }
   .card__side {
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.15);
-    height: 35rem;
+    height: 37rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -174,9 +176,49 @@ a {
       .card__side--back-1 {
         background: linear-gradient(to right bottom, #f7d794, #f5cd79); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 16rem;
+    background-blend-mode: hard-light;
+    -webkit-clip-patch: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture-1 {
+      background-image: linear-gradient(to right bottom, #f7d794, #f5cd79), url(../image/card__picture-1.jpg); }
+    .card__picture-2 {
+      background-image: url(../image/card__picture-2.jpg); }
+    .card__picture-3 {
+      background-image: url(../image/card__picture-3.jpg); }
+  .card__heading {
+    width: 75%;
+    color: #fff;
+    position: absolute;
+    top: 10rem;
+    right: 1.4rem;
+    text-align: right;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .card__heading-span {
+    padding: 0.8rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span-1 {
+      background-image: linear-gradient(to right bottom, rgba(247, 215, 148, 0.45), rgba(245, 205, 121, 0.85)); }
+  .card__list {
+    padding: 2rem; }
+    .card__list ul {
+      margin: 0 auto;
+      list-style: none;
+      width: 80%; }
+      .card__list ul li {
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem; }
+        .card__list ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .bot {
   border-radius: 40%;
@@ -279,6 +321,8 @@ a {
   .row__2-of-3-3 {
     width: calc(2 * ((100% - (3 * 3rem)) / 3) + 3rem);
     float: left; }
+  .row--card--with {
+    max-width: 80rem; }
 
 .content-img {
   position: relative; }
@@ -341,7 +385,7 @@ a {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 20rem 0;
+  padding: 18rem 0;
   margin-top: -20vh; }
 
 .section-featuers {

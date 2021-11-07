@@ -1,13 +1,15 @@
 .card {
+  // function عملکرد
   perspective: 50rem;
   -moz-perspective: 50rem;
   position: relative;
-  height: 30rem;
+  height: 37rem;
   &__side {
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: $box-shadow-rem-014 $box-shodow-015;
-    height: 35rem;
+    height: 37rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -28,9 +30,74 @@
     }
   }
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
   &:hover &__side--back {
     transform: rotateY(0);
   }
+  // style front__card
+
+  // style pictures
+  &__picture {
+    background-size: cover;
+    height: 16rem;
+    background-blend-mode: hard-light;
+    -webkit-clip-patch: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    &-1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-yellow-white,
+          $color-yellow-light
+        ),
+        url(../image/card__picture-1.jpg);
+    }
+    &-2 {
+      background-image: url(../image/card__picture-2.jpg);
+    }
+    &-3 {
+      background-image: url(../image/card__picture-3.jpg);
+    }
+  }
+  // style headinga
+  &__heading {
+    width: 75%;
+    color: $color-white;
+    position: absolute;
+    top: 10rem;
+    right: 1.4rem;
+    text-align: right;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  &__heading-span {
+    padding: 0.8rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &-1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-yellow-white, 0.45),
+        rgba($color-yellow-light, 0.85)
+      );
+    }
+  }
+  &__list {
+    padding: 2rem;
+    ul {
+      margin: 0 auto;
+      list-style: none;
+      width: 80%;
+      li {
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
 }
+// card__heading-span-1
