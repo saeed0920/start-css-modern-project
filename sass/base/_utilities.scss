@@ -53,3 +53,19 @@ a {
 .u-margin-top-big {
   margin-top: 5rem;
 }
+.u-margin-top-hige {
+  margin-top: 7rem;
+}
+.style---btn {
+  @include btn;
+}
+.u-font-size-2rem {
+  font-size: 2rem;
+}
+.u-padding-2rem {
+  padding: 2rem;
+}
+.btn--green {
+  color: $color-white;
+  background-color: $color-green-white;
+}
