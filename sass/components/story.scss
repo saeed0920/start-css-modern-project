@@ -1,0 +1,26 @@
+.story {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 4rem;
+  padding-left: 5.5rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  transform: skewX(-12deg);
+  & > * {
+    transform: skewX(12deg);
+  }
+  &__pic {
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-1.5rem) skewX(12deg);
+  }
+  &--pic {
+    width: 100%;
+  }
+}
