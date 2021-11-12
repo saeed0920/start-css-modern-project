@@ -27,3 +27,28 @@
   position: relative;
   padding: 12rem 0;
 }
+.section-book {
+  padding: 12rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-img-pink-light,
+    $color-img-pink-white
+  );
+}
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../../image/section-book.jpg);
+  height: 34rem;
+  background-size: 100%;
+  border-radius: $border-reduis-3px;
+  box-shadow: $box-shadow-rem-014 rgba($color-black, 0.2);
+  &__form {
+    padding: 4rem;
+    width: 50%;
+  }
+}

@@ -1,6 +1,6 @@
 .story {
   width: 95%;
-
+  font-size: 1rem;
   border-radius: 3px;
   padding: 4rem;
   padding-left: 5.5rem;
@@ -13,6 +13,7 @@
   &__pic {
     width: 10rem;
     height: 10rem;
+    overflow: hidden;
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);

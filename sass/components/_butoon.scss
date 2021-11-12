@@ -1,7 +1,7 @@
 .bot {
   border-radius: 40%;
   color: $color-white;
-  background-color: aqua;
+  background-color: $color-quan;
   padding: 8px;
 }
 .btn--main {
@@ -89,5 +89,39 @@
 
     color: $color-black;
     transform: translateY(-1rem);
+  }
+}
+.form-bot {
+  &__bot {
+    border-radius: 40%;
+    color: $color-white;
+    background-color: $color-quan;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    &,
+    &:link,
+    &:visited .bot--style {
+      height: 4rem;
+      border: none;
+      margin-top: 20px;
+      border-radius: 9rem;
+      width: 15rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      box-shadow: 1px 1px 90px $box-shodow-015;
+    }
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+    }
+    &:active,
+    :focus {
+      outline: none;
+      transform: translateY(-2px);
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    }
   }
 }

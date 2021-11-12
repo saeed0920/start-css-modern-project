@@ -31,5 +31,9 @@
     max-width: 80rem;
   }
 }
-
+.row--book {
+  max-width: 79rem;
+  margin: 0 auto;
+  @include clearfix;
+}
 // row __section-featuers  __1-of-4
