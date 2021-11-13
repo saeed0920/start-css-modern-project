@@ -1,3 +1,21 @@
+.section-content {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-img-pink-light, 0.8),
+      rgba($color-img-pink-white, 0.8)
+    ),
+    url(../image/bech.jpg);
+  box-sizing: border-box;
+  height: 88vh;
+  width: auto;
+  display: block;
+  text-align: center;
+  -webkit-clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0);
+  clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0);
+  position: relative;
+  background-size: cover;
+}
+
 .section-about {
   background-color: $color-white-light;
   padding: 18rem 0;
@@ -29,11 +47,7 @@
 }
 .section-book {
   padding: 12rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-img-pink-light,
-    $color-img-pink-white
-  );
+  background: linear-gradient(to right, #f2709c, #ff9472);
 }
 .book {
   background-image: linear-gradient(

@@ -3,22 +3,22 @@
 @keyframes anicontent {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-100px) translate(-50%, -50%);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) translate(-50%, -50%);
   }
 }
 
 @keyframes anibot {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(40px) translate(-50%, -50%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translate(-50%, -50%);
   }
 }
