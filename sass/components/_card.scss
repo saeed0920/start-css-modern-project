@@ -147,6 +147,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     &--box__text {
       text-align: center;
       margin-bottom: 8rem;
@@ -161,7 +162,8 @@
       }
     }
     &--btn {
-      @include btn;
+      padding: 1.8rem 2rem !important;
+      inline-size: 10rem;
     }
   }
 }
