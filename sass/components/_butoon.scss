@@ -154,10 +154,7 @@
     font-family: cursive;
     text-decoration: none;
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include position-center;
     transition: ALL 0.2s;
     padding: 1rem 4rem;
     border-radius: 3rem;
