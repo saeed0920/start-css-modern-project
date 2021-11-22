@@ -4,6 +4,7 @@
     max-width: 69.625rem;
     @include res(tab-small) {
       max-width: 40rem;
+      width: 47%;
     }
     @include clearfix;
 
@@ -30,6 +31,9 @@
         box-shadow: 0rem 1.5rem 4rem rgba($color-black, 0.15);
         padding: 2.1rem;
         background-color: rgba($color-white, 0.4);
+        @include res(tab-small) {
+          padding: 2rem 0;
+        }
         &__icon {
           display: inline-block;
           margin-bottom: 0.3rem;

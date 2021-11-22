@@ -44,6 +44,10 @@
   &__radio-group {
     display: inline-block;
     width: 49%;
+    // @include res(phone) {
+    //   width: 100%;
+    //   margin-bottom: 1rem;
+    // }
   }
   &__radio-input {
     display: none;

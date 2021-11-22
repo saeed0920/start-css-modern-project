@@ -41,9 +41,15 @@ a {
 }
 .u-margin-bot-big {
   margin-bottom: 5rem !important;
+  @include res(tab-small) {
+    margin-bottom: 4rem !important;
+  }
 }
 .u-margin-bot-med {
   margin-bottom: 2rem !important;
+  @include res(tab-small) {
+    margin-bottom: 1rem !important;
+  }
 }
 .u-margin-bot-small {
   margin-bottom: $default-font-size !important;
@@ -56,15 +62,24 @@ a {
 }
 .u-margin-top-med {
   margin-top: 3rem !important;
+  @include res(tab-small) {
+    margin-top: 2rem !important;
+  }
 }
 .u-margin-top-2rem {
   margin-top: 2rem !important;
 }
 .u-margin-top-big {
   margin-top: 5rem !important;
+  @include res(tab-small) {
+    margin-top: 3rem !important;
+  }
 }
 .u-margin-top-hige {
   margin-top: 7rem !important;
+  @include res(tab-small) {
+    margin-top: 5rem !important;
+  }
 }
 .style---btn {
   @include btn;

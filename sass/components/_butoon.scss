@@ -114,6 +114,9 @@
       display: inline-block;
       transition: all 0.2s;
       box-shadow: 1px 1px 90px $box-shodow-015;
+      @include res(tab-big) {
+        transform: translateY(-1rem);
+      }
     }
     &::after {
       content: "";
@@ -159,6 +162,9 @@
     padding: 1rem 4rem;
     border-radius: 3rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    @include res(tab-small) {
+      padding: 1rem 2rem;
+    }
   }
   &:hover {
     transform: translateY(-5px) translate(-50%, -50%);

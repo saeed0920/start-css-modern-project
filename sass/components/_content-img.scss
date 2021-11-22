@@ -9,18 +9,45 @@
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 0.6rem;
+
+    @include res(tab-small) {
+      float: left;
+      position: relative;
+      width: 33.3333333%;
+      box-shadow: 0 2rem 2rem rgba($color_black, 0.15);
+    }
     // outline: invert;
     &__1 {
       left: 2rem;
       bottom: -20rem;
+      @include res(tab-small) {
+        top: 0.5rem;
+        left: 1.5rem;
+        transform: scale(1.1);
+        margin-top: 3rem;
+      }
     }
     &__2 {
       right: -8rem;
       bottom: -13rem;
+      @include res(tab-small) {
+        top: -0.5rem;
+        margin-top: 3rem;
+        left: 0;
+        transform: scale(1.2);
+        z-index: 100;
+      }
     }
     &__3 {
       top: -2rem;
       left: -1rem;
+
+      @include res(tab-small) {
+        top: 0.5rem;
+        left: -1.5rem;
+        transform: scale(1.1);
+        margin-top: 3rem;
+      }
     }
     &:hover {
       // position: relative;
