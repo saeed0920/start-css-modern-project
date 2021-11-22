@@ -1,14 +1,24 @@
 .section-featuers {
   &__row-2 {
     margin: 0 auto;
-    max-width: 1114px;
+    max-width: 69.625rem;
+    @include res(tab-small) {
+      max-width: 40rem;
+    }
     @include clearfix;
 
     &__1-of-4 {
+      @include res(tab-small) {
+        width: 100% !important;
+      }
       float: left;
       width: calc((100% - 3 * 4rem) / 4);
 
       &:not(:last-child) {
+        @include res(tab-small) {
+          margin-right: 0 !important;
+          margin-bottom: 5rem;
+        }
         margin-right: 4rem;
       }
       &__box {

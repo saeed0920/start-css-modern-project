@@ -1,6 +1,9 @@
 .row {
   max-width: 58rem;
   margin: 0 auto;
+  @include res(tab-small) {
+    padding: 0 3rem;
+  }
   @include clearfix;
   &--story {
     max-width: 68rem;
@@ -9,6 +12,10 @@
   }
   .row__2-of-1 {
     width: calc((100% - #{$space-row}) / 2);
+    @include res(tab-small) {
+      width: 100%;
+    }
+
     float: left;
     &:not(:last-child) {
       margin-right: $space-row;
@@ -17,9 +24,15 @@
   &__1-of-3 {
     width: calc((100% - (3 * 3rem)) / 3);
     float: left;
-
+    @include res(tab-small) {
+      width: 100% !important;
+    }
     &:not(:last-child) {
       margin-right: 3rem;
+      @include res(tab-small) {
+        margin-right: 0 !important;
+        margin-bottom: 5rem;
+      }
     }
   }
 
@@ -29,6 +42,9 @@
   }
   &--card--with {
     max-width: 80rem;
+    @include res(tab-small) {
+      max-width: 40rem;
+    }
   }
 }
 .row--book {

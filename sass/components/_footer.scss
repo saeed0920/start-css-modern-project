@@ -10,6 +10,11 @@
   &__nav {
     border-top: 1px solid #777;
     padding-top: 1.5rem;
+    @include res(tab-small) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
     display: inline-block;
   }
 
@@ -31,6 +36,7 @@
     text-decoration: none;
     display: inline-block;
     transition: all 0.2s;
+
     &:hover,
     &:active {
       color: $color-pink-white;
@@ -42,6 +48,11 @@
   //
 
   &__copyright {
+    @include res(tab-small) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
     // display: inline-block;
     // color: $color-text-white;
     border-top: 1px solid #777;

@@ -14,6 +14,14 @@
     box-shadow: 0rem 0.8rem 2.5rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
+    @include res(tab-small) {
+      top: 2rem;
+      right: 2rem;
+    }
+    @include res(phone) {
+      top: 1.5rem;
+      right: 1.5rem;
+    }
   }
   &__background {
     width: 4.5rem;
@@ -25,7 +33,14 @@
     right: 3.5rem;
     z-index: 1000;
     transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-    // transform: scale(80);
+    @include res(tab-small) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
+    @include res(phone) {
+      top: 2rem;
+      right: 2rem;
+    }
   }
   &__nav {
     height: 100vh;

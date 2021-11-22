@@ -5,6 +5,22 @@
 }
 html {
   margin: 2rem;
+  font-size: 100%;
+
+  @include res(tab-big) {
+    font-size: 60%;
+    margin: 0;
+  }
+  @include res(tab-small) {
+    font-size: 62.5%;
+    margin: 0em;
+  }
+  @include res(phone) {
+    font-size: 50%;
+  }
+  @include res(big-desktop) {
+    font-size: 107%;
+  }
 }
 body {
   font-family: cursive;

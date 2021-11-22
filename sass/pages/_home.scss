@@ -12,6 +12,11 @@
   text-align: center;
   -webkit-clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0);
   clip-path: polygon(0 100%, 100% 88%, 100% 0%, 0 0);
+  @include res(phone) {
+    -webkit-clip-path: polygon(0 100%, 100% 90%, 100% 0%, 0 0);
+    clip-path: polygon(0 100%, 100% 90%, 100% 0%, 0 0);
+  }
+
   position: relative;
   background-size: cover;
 }
