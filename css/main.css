@@ -44,7 +44,7 @@ big-desktop
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -104,7 +104,7 @@ html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 107%; } }
+      font-size: 100%; } }
 
 body {
   font-family: cursive; }
@@ -238,8 +238,8 @@ a {
   display: none; }
 
 .navbar__butoon {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   background-color: #fff;
   position: fixed;
@@ -259,8 +259,8 @@ a {
       right: 1.5rem; } }
 
 .navbar__background {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   background-image: radial-gradient(#f18b79, #fd5b68);
   position: fixed;
@@ -334,7 +334,7 @@ a {
 
 .navbar__icon {
   position: relative;
-  margin-top: 2.7rem; }
+  margin-top: 2.2rem; }
   .navbar__icon, .navbar__icon::after, .navbar__icon::before {
     width: 2rem;
     height: 3px;
@@ -733,8 +733,8 @@ a {
   display: none; }
 
 .navbar__butoon {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   background-color: #fff;
   position: fixed;
@@ -754,8 +754,8 @@ a {
       right: 1.5rem; } }
 
 .navbar__background {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   background-image: radial-gradient(#f18b79, #fd5b68);
   position: fixed;
@@ -829,7 +829,7 @@ a {
 
 .navbar__icon {
   position: relative;
-  margin-top: 2.7rem; }
+  margin-top: 2.2rem; }
   .navbar__icon, .navbar__icon::after, .navbar__icon::before {
     width: 2rem;
     height: 3px;

@@ -3,8 +3,8 @@
     display: none;
   }
   &__butoon {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     background-color: $color-white;
     position: fixed;
@@ -24,8 +24,8 @@
     }
   }
   &__background {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     background-image: radial-gradient($color-pink-white, $color-pink-light);
     position: fixed;
@@ -113,7 +113,7 @@
 
   &__icon {
     position: relative;
-    margin-top: 2.7rem;
+    margin-top: 2.2rem;
     &,
     &::after,
     &::before {
