@@ -50,7 +50,7 @@
       rgba($color-img-pink-light, 0.8),
       rgba($color-img-pink-white, 0.8)
     ),
-    url(../../image/section-features-small.jpg);
+    url(../image/section-features-small.jpg);
 
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
     background-image: linear-gradient(
@@ -58,7 +58,7 @@
         rgba($color-img-pink-light, 0.8),
         rgba($color-img-pink-white, 0.8)
       ),
-      url(../../image/section-features.jpg);
+      url(../image/section-features.jpg);
   }
 
   background-size: cover;
@@ -101,7 +101,7 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(./image/section-book-small);
+    url(../image/section-book-small.jpg);
 
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
     background-image: linear-gradient(
@@ -110,7 +110,7 @@
         rgba($color-white, 0.9) 50%,
         transparent 50%
       ),
-      url(./image/section-book-small);
+      url(../image/section-book.jpg);
   }
 
   background-size: 100%;
@@ -126,7 +126,7 @@
         rgba($color-white, 0.9) 60%,
         transparent 60%
       ),
-      url(../../image/section-book-small.jpg);
+      url(../image/section-book-small.jpg);
 
     background-size: cover;
     margin: 0 2rem;
@@ -139,7 +139,7 @@
         rgba($color-white, 0.9) 60%,
         transparent 60%
       ),
-      url(../../image/section-book.jpg);
+      url(../image/section-book.jpg);
   }
 
   @include res(phone) {
@@ -149,7 +149,7 @@
         rgba($color-white, 0.9) 100%,
         transparent 100%
       ),
-      url(../../image/section-book-small.jpg);
+      url(../image/section-book-small.jpg);
   }
   &__form {
     padding: 4rem;
