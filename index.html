@@ -105,12 +105,45 @@
             </div>
             <div class="row__2-of-1">
               <div class="content-img">
+                <!--  img res fixed  -->
                 <img
+                  srcset="
+                    ./image/content-img-1.jpg       1280w,
+                    ./image/content-img-1-small.jpg  300w
+                  "
+                  alt="img1"
+                  sizes="(max-width:37.5em) 25vw, (max-width:56.25em) 21vw,(max-width:75em) 17vw,300px"
+                  class="content-img__photo content-img__photo__1"
+                  src="./image/content-img-1.jpg"
+                />
+
+                <img
+                  srcset="
+                    ./image/content-img-2.jpg       1280w,
+                    ./image/content-img-2-small.jpg  300w
+                  "
+                  alt="img1"
+                  sizes="(max-width:37.5em) 25vw, (max-width:56.25em) 21vw,(max-width:75em) 17vw,300px"
+                  class="content-img__photo content-img__photo__2"
+                  src="./image/content-img-2.jpg"
+                />
+                <img
+                  srcset="
+                    ./image/content-img-3.jpg       1280w,
+                    ./image/content-img-3-small.jpg  300w
+                  "
+                  alt="img1"
+                  sizes="(max-width:37.5em) 25vw, (max-width:56.25em) 21vw,(max-width:75em) 17vw,300px"
+                  class="content-img__photo content-img__photo__3"
+                  src="./image/content-img-3.jpg"
+                />
+
+                <!-- <img
                   src="/image/content-img-1.jpg"
                   alt="img1"
                   class="content-img__photo content-img__photo__1"
-                />
-                <img
+                /> -->
+                <!-- <img
                   src="/image/content-img-2.jpg"
                   alt="img2"
                   class="content-img__photo content-img__photo__2"
@@ -119,7 +152,7 @@
                   src="/image/content-img-3.jpg"
                   alt="img3"
                   class="content-img__photo content-img__photo__3"
-                />
+                /> -->
               </div>
             </div>
           </div>
@@ -343,7 +376,14 @@
       <div class="row--story">
         <div class="story">
           <figure class="story__pic">
-            <img src="./image/story-1.jpg" alt="story-pic" class="story--pic" />
+            <img
+              srcset="./image/story-1.jpg 1280w, ./image/story-1-small.jpg 300w"
+              sizes="(max-width:37.5em) 18vw,(max-width:56.25em) 15vw,(max-width:75em) 11vw,300px"
+              alt="story-pic"
+              class="story--pic"
+              src="./image/story-1.jpg"
+            />
+            <!-- <img src="./image/story-1.jpg" alt="story-pic" class="story--pic" /> -->
             <figcaption class="story__caption">Marty smith</figcaption>
           </figure>
           <div class="story__text">
@@ -365,7 +405,15 @@
       <div class="row--story">
         <div class="story u-margin-top-big">
           <figure class="story__pic">
-            <img src="./image/story-2.jpg" alt="story-pic" class="story--pic" />
+            <img
+              srcset="./image/story-2.jpg 1280w, ./image/story-2-small.jpg 300w"
+              sizes="(max-width:37.5em) 18vw,(max-width:56.25em) 15vw,(max-width:75em) 11vw,300px"
+              alt="story-pic"
+              class="story--pic"
+              src="./image/story-2.jpg"
+            />
+
+            <!-- <img src="./image/story-2.jpg" alt="story-pic" class="story--pic" /> -->
             <figcaption class="story__caption">jack velson</figcaption>
           </figure>
           <div class="story__text">
@@ -494,11 +542,24 @@
     <div class="pup" id="pup">
       <div class="pup__content">
         <div class="pup__left">
-          <img src="./image/story-1.jpg" alt="pup pic" class="pup__img" /><img
-            src="./image/story-2.jpg"
+          <img
+            srcset="./image/story-1.jpg 1280w, ./image/story-1-small.jpg 300w"
+            sizes="(max-width:37.5em) 37vw,(max-width:56.25em) 37vw,(max-width:75em) 22vw,300px"
             alt="pup pic"
             class="pup__img"
+            src="./image/story-1.jpg"
           />
+
+          <img
+            srcset="./image/story-2.jpg 1280w, ./image/story-2-small.jpg 300w"
+            sizes="(max-width:37.5em) 37vw,(max-width:56.25em) 37vw,(max-width:75em) 22vw,300px"
+            alt="pup pic"
+            class="pup__img"
+            src="./image/story-2.jpg"
+          />
+
+          <!--           <img src="./image/story-1.jpg" alt="pup pic" class="pup__img" />
+          <img src="./image/story-2.jpg" alt="pup pic" class="pup__img" /> -->
         </div>
         <div class="pup__right">
           <a href="#section--brazil" class="pup__close">&times;</a>
