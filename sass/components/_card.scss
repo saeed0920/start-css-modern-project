@@ -67,7 +67,16 @@
           $color-yellow-white,
           $color-yellow-light
         ),
-        url(../image/card__picture-1.jpg);
+        url(../image/card__picture-1-small.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 120em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-yellow-white,
+            $color-yellow-light
+          ),
+          url(../image/card__picture-1.jpg);
+      }
     }
     &-2 {
       background-image: linear-gradient(
@@ -75,7 +84,16 @@
           $color-quan-white,
           $color-quan-light
         ),
-        url(../image/card__picture-2.jpg);
+        url(../image/card__picture-2-small.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 120em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-quan-white,
+            $color-quan-light
+          ),
+          url(../image/card__picture-2.jpg);
+      }
     }
     &-3 {
       background-image: linear-gradient(
@@ -83,7 +101,16 @@
           $color-green-white,
           $color-green-light
         ),
-        url(../image/card__picture-3.jpg);
+        url(../image/card__picture-3-small.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 120em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-green-white,
+            $color-green-light
+          ),
+          url(../image/card__picture-3.jpg);
+      }
     }
   }
   // style headinga

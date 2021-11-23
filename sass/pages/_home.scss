@@ -4,7 +4,17 @@
       rgba($color-img-pink-light, 0.8),
       rgba($color-img-pink-white, 0.8)
     ),
-    url(../image/bech.jpg);
+    url(../image/bech-small.jpg);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-img-pink-light, 0.8),
+        rgba($color-img-pink-white, 0.8)
+      ),
+      url(../image/bech.jpg);
+  }
+
   box-sizing: border-box;
   height: 88vh;
   width: auto;
@@ -40,7 +50,17 @@
       rgba($color-img-pink-light, 0.8),
       rgba($color-img-pink-white, 0.8)
     ),
-    url(../../image/section-features.jpg);
+    url(../../image/section-features-small.jpg);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-img-pink-light, 0.8),
+        rgba($color-img-pink-white, 0.8)
+      ),
+      url(../../image/section-features.jpg);
+  }
+
   background-size: cover;
   margin-top: -5rem;
   transform: skewY(-5deg);
@@ -81,7 +101,17 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../../image/section-book.jpg);
+    url(../../image/section-book-small.jpg);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../../image/section-book.jpg);
+  }
 
   background-size: 100%;
   border-radius: $border-reduis-3px;
@@ -96,10 +126,20 @@
         rgba($color-white, 0.9) 60%,
         transparent 60%
       ),
-      url(../../image/section-book.jpg);
+      url(../../image/section-book-small.jpg);
 
     background-size: cover;
     margin: 0 2rem;
+  }
+
+  @media (min-resolution: 192dpi) and (max-width: 56.25em), (min-width: 120em) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 60%,
+        transparent 60%
+      ),
+      url(../../image/section-book.jpg);
   }
 
   @include res(phone) {
@@ -109,7 +149,7 @@
         rgba($color-white, 0.9) 100%,
         transparent 100%
       ),
-      url(../../image/section-book.jpg);
+      url(../../image/section-book-small.jpg);
   }
   &__form {
     padding: 4rem;
