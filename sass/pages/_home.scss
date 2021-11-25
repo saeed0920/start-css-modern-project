@@ -6,7 +6,8 @@
     ),
     url(../image/bech-small.jpg);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 120em) {
     background-image: linear-gradient(
         to right,
         rgba($color-img-pink-light, 0.8),
@@ -52,7 +53,8 @@
     ),
     url(../image/section-features-small.jpg);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 120em) {
     background-image: linear-gradient(
         to right,
         rgba($color-img-pink-light, 0.8),
@@ -103,7 +105,8 @@
     ),
     url(../image/section-book-small.jpg);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 120em) {
     background-image: linear-gradient(
         105deg,
         rgba($color-white, 0.9) 0%,
@@ -132,7 +135,8 @@
     margin: 0 2rem;
   }
 
-  @media (min-resolution: 192dpi) and (max-width: 56.25em), (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (max-width: 56.25em),
+    only screen and (min-width: 120em) {
     background-image: linear-gradient(
         105deg,
         rgba($color-white, 0.9) 0%,

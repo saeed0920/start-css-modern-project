@@ -25,3 +25,8 @@ html {
 body {
   font-family: cursive;
 }
+
+::selection {
+  background-color: $color-pink-white;
+  color: $color-white;
+}
