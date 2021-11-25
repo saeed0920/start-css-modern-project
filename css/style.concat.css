@@ -467,6 +467,7 @@ tab-big
 big-desktop
 */
 /* animation */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @keyframes anicontent {
   0% {
     opacity: 0;
@@ -553,7 +554,7 @@ html {
       font-size: 100%; } }
 
 body {
-  font-family: cursive; }
+  font-family: "Open Sans", sans-serif; }
 
 ::selection {
   background-color: #f18b79;
