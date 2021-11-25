@@ -533,7 +533,8 @@ big-desktop
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
 html {
   margin: 2rem;
