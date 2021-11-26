@@ -154,7 +154,7 @@
   &:link,
   &:visited {
     font-size: $default-font-size;
-    font-family: cursive;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     display: block;
     @include position-center;

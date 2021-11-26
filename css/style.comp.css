@@ -87,8 +87,7 @@ big-desktop
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; }
+  box-sizing: border-box; }
 
 html {
   margin: 2rem;
@@ -652,7 +651,7 @@ a {
 
 .btn-primery, .btn-primery:link, .btn-primery:visited {
   font-size: 1rem;
-  font-family: cursive;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   display: block;
   position: absolute;
