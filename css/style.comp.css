@@ -57,6 +57,7 @@ big-desktop
       letter-spacing: 0.5rem; } }
 
 .header-sec {
+  backface-visibility: hidden;
   font-size: xx-large;
   display: inline-block;
   font-weight: 700;
@@ -436,7 +437,7 @@ a {
     text-transform: uppercase;
     font-weight: 300; }
   .card__heading-span {
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 2rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span-1 {
@@ -1159,6 +1160,7 @@ a {
   position: relative; }
 
 .form__radio-butoon {
+  padding: 0.6rem;
   height: 2rem;
   width: 2rem;
   border: 5px solid #f18b79;

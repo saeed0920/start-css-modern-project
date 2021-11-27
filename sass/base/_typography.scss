@@ -21,6 +21,7 @@
   }
 }
 .header-sec {
+  backface-visibility: hidden;
   font-size: xx-large;
   display: inline-block;
   font-weight: 700;
